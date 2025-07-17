@@ -9,6 +9,7 @@
 ## ✅Tasks To Do:
 - [ ] Ubuntu Server
 - [ ] Windows 10
+
 *(more OSs will be added later...)*
 
 ## 📁Files
