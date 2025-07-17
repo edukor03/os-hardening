@@ -19,5 +19,5 @@
 - Reference links (if applicable)
 
 ## 📂 Direct Access
-- [Ubuntu Server](./ubuntu/)
+- [Ubuntu Server](./ubuntu-server/)
 - [Windows 10](./windows10/)
