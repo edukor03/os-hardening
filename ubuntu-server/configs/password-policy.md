@@ -61,7 +61,7 @@ This will ensure that same password cannot no be reused for 5 new passwords for 
 ## Configuration of Minimum Days Between Passwords Changes and Expiration date.
 The configuration for these settings is located in another file: */etc/login.defs*
 
-![login.defs file configuration](screenshots/password-policy3.png)
+![login.defs file configuration](screenshots/password-policy4.png)
 
 To set expiration date for the password change the defult value from 9999 to 365. Those values represent days, so password will be valid for 1 year.
 
