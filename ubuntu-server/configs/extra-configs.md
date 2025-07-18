@@ -11,7 +11,7 @@ In this file we will look at some smaller changes that can be made to make the U
 * */etc/issue* - To configure warning message before the user login into the system.
 * */etc/sysctl.conf* - Was used to disable IPv6.
 
-## Disable Automounting**
+## Disable Automounting
 **Autofs** allows the automatic mounting of devices, typically including CD/DVDs and USB drives. With automounting enabled, anyone with physical access could attach a USB drive or disc and have its contents available in the system even if they lacked permission to mount it themselves. **autofs** should be removed or disabled.
 To verify if the **autofs** is not enabled, run the following command:
 
