@@ -31,3 +31,14 @@ Warning messages inform users who are attempting to log in to the sytem of their
 This can be edited in the */etc/issue* file. Remove any instances of **\m, \r, \s, \v** or references to the **OS platform** to make sure that only necessary information is displayed.
 Inside that file you can enter something like this: "Authorised users only. All activity may be monitored and reported."
 
+The results of changing the file contents are shown below:
+
+![](screenshots/warning-message1.png)
+
+## Disable IPv6
+If IPv6 or dual stack is not to be used, it is recommended that IPv6 be disabled to reduce the attack surface of the system. To disable IPv6 through sysctl settings, set the following paramters in */etc/sysctl.conf* or */etc/sysctl.d/* file:
+
+> net.ipv6.conf.all.disable_ipv6 = 1
+> net.ipv6.conf.default.disable_ipv6 =1
+
+
