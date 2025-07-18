@@ -39,6 +39,19 @@ The results of changing the file contents are shown below:
 If IPv6 or dual stack is not to be used, it is recommended that IPv6 be disabled to reduce the attack surface of the system. To disable IPv6 through sysctl settings, set the following paramters in */etc/sysctl.conf* or */etc/sysctl.d/* file:
 
 > net.ipv6.conf.all.disable_ipv6 = 1
+
 > net.ipv6.conf.default.disable_ipv6 =1
+
+![](screenshots/disable-ipv6.png)
+
+To disable it in the command console and not the file then run the following commands:
+
+> sysctl -w net.ipv6.conf.all.disable_ipv6=1
+
+> sysctl -w net.ipv6.conf.default.disable_ipv6=1
+
+When IPv6 is disabled via sysctl and is still in the disabled state the output would contain "1" for specific entries:
+
+> sysctl -a 2>/dev/null | grep disable_ipv6
 
 
