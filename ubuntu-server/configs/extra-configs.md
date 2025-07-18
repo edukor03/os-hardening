@@ -8,7 +8,7 @@ In this file we will look at some smaller changes that can be made to make the U
 * Enable Audit Service
 
 **📁Files accessed:**
-* 
+* */etc/issue* - To configure warning message before the user login into the system.
 
 ## Disable Automounting**
 **Autofs** allows the automatic mounting of devices, typically including CD/DVDs and USB drives. With automounting enabled, anyone with physical access could attach a USB drive or disc and have its contents available in the system even if they lacked permission to mount it themselves. **autofs** should be removed or disabled.
@@ -23,4 +23,11 @@ or run the following command to verify that autofs is not installed
 
 In my case its not installed.
 
+![](screenshots/disable-automounting1.png)
+
+## Ensure the Local Login Banner is Configured Properly
+Warning messages inform users who are attempting to log in to the sytem of their legal status regarding the system and must include the nae of the organisation that owns the system and any monitoring policies that are in place.
+
+This can be edited in the */etc/issue* file. Remove any instances of **\m, \r, \s, \v** or references to the **OS platform** to make sure that only necessary information is displayed.
+Inside that file you can enter something like this: "Authorised users only. All activity may be monitored and reported."
 
