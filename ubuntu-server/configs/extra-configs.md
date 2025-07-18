@@ -9,6 +9,7 @@ In this file we will look at some smaller changes that can be made to make the U
 
 **📁Files accessed:**
 * */etc/issue* - To configure warning message before the user login into the system.
+* */etc/sysctl.conf* - Was used to disable IPv6.
 
 ## Disable Automounting**
 **Autofs** allows the automatic mounting of devices, typically including CD/DVDs and USB drives. With automounting enabled, anyone with physical access could attach a USB drive or disc and have its contents available in the system even if they lacked permission to mount it themselves. **autofs** should be removed or disabled.
@@ -54,4 +55,7 @@ When IPv6 is disabled via sysctl and is still in the disabled state the output w
 
 > sysctl -a 2>/dev/null | grep disable_ipv6
 
+![](screenshots/disable-ipv6(1).png)
+
+The results are shown in the screenshot above. If all those settings set to "1" that means changes are successful.
 
